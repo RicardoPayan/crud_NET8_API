@@ -18,6 +18,8 @@ This repository contains a simple CRUD (Create, Read, Update, Delete) applicatio
 - Passwords are hashed before being stored in the database.
 - Styling of the frontend using Material and TailwindCSS.
 
+![login](imagenes/login.png)
+
 ## Features
 
 ### Backend
@@ -26,9 +28,14 @@ This repository contains a simple CRUD (Create, Read, Update, Delete) applicatio
 - **Stored Procedures**: Instead of using Entity Framework, stored procedures are utilized to interact with the SQL Server database, enhancing performance and control.
 - **Password Hashing**: Passwords are hashed before being saved to ensure security and protect user information.
 
+![API](imagenes/api.png)
+
 ### Frontend
 
 - **Angular 17**: The frontend is built using Angular 17, providing a modern and responsive user interface for the CRUD operations.
 - **Login Functionality**: A simple login system is implemented, where user credentials are verified against the database, and passwords are matched securely.
 - **Styling**: The frontend is styled using Material and TailwindCSS to ensure a clean and user-friendly interface.
+
+![inicio](imagenes/inicio.png)
+![registro](imagenes/registro.png)
 
