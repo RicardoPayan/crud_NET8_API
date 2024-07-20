@@ -1,0 +1,7 @@
+# .NET
+*.user
+*.suo
+*.bak
+bin/
+obj/
+*.vs/

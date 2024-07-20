@@ -1,0 +1,87 @@
+<header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <!-- Logo o Imagen -->
+      <div>
+        <img class="h-12" src="https://media.licdn.com/dms/image/C560BAQErY0buQ66AXw/company-logo_200_200/0/1652723102743/nezter_landing_solutions_logo?e=2147483647&v=beta&t=ns4D4BeB6yofQmnAMlVgVQjKNWAAwxkwbtpicdy6veQ" alt="Logo">
+      </div>
+      <!-- Título -->
+      <h1 class="text-xl sm:text-2xl font-bold text-gray-800 text-center">Examen - CRUD con Angular y .NET</h1>
+    </div>
+  </header>
+
+
+
+<div class="flex items-center justify-center min-h-screen py-8 px-4 sm:px-6  lg:px-8 shadow-sm" >
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full ">
+        <h2 class="text-2xl font-bold mb-6 text-center">Agregar o Editar Usuario</h2>
+        <form [formGroup]="formUsuario">
+            <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nombre" type="text" formControlName="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="mb-4">
+
+                <label class="block text-gray-700 text-sm font-bold mb-2">Direccion</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="direccion" type="text" formControlName="direccion" placeholder="Ingresa tu direccion" required>
+
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Telefono</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="telefono" type="text" formControlName="telefono" placeholder="Ingresa tu telefono" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Codigo Postal</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="codigoPostal" type="text" formControlName="codigoPostal" placeholder="Ingresa tu codigoPostal" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Tipo</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tipo" type="number" formControlName="tipo" placeholder="Ingresa tu tipo de usuario" required>
+            </div>
+
+    
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Estado</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="estado" type="text" formControlName="estado" placeholder="Ingresa tu estado" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Ciudad</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="ciudad" type="text" formControlName="ciudad" placeholder="Ingresa tu ciudad" required>
+            </div>
+    
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Login Usuario</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="login" type="text" formControlName="login" placeholder="Ingresa tu usuario login" required>
+            </div>
+    
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Contraseña</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" formControlName="password" placeholder="Ingresa tu Contraseña" required>
+            </div>
+    
+    
+            <div class="flex">
+                <button 
+                    class="flex w-full justify-center rounded-md bg-nezter hover:bg-nezt-dark  
+                    px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-sky-50" 
+                    (click)="guardar()"
+                >
+                    Guardar
+                </button>
+                <button 
+                    class="flex w-full justify-center rounded-md bg-red hover:bg-dark-red  
+                    px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm text-sky-50 ml-1" 
+                    (click)="volver()"
+                >
+                    Volver
+                </button>
+            </div>
+    
+        </form>
+    </div>
+    
+</div>
