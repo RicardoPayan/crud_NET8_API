@@ -3,9 +3,9 @@
 ## Overview
 
 <div style="display: flex; gap: 10px;">
-    <img src="images/logos/net.png" alt=".NET" width="100" />
-    <img src="images/logos/angular.png" alt="Angular" width="100" />
-    <img src="images/logos/tailwindcss.png" alt="TailwindCSS" width="100" />
+    <img src="imagenes/logos/net.png" alt=".NET" width="100" />
+    <img src="imagenes/logos/angular.png" alt="Angular" width="100" />
+    <img src="imagenes/logos/tailwindcss.png" alt="TailwindCSS" width="100" />
 </div>
 
 This repository contains a simple CRUD (Create, Read, Update, Delete) application developed to practice with .NET 8. The backend is built with ASP.NET Core, and the frontend is created using Angular 17. The project demonstrates a basic implementation of a full-stack application with the following features:
